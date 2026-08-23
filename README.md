@@ -21,24 +21,7 @@ Canvas runs coursework for a large number of institutions: assignments, grades, 
 - `otp_secret_key=` — the encryption setter for MFA secrets, checked against OWASP's cryptographic-failures category
 - `clear_file_session` — session invalidation on logout, using `SecureRandom` for regeneration
 
-## Repository structure
 
-```
-cys402-canvas-lms-secure-design/
-├── README.md
-├── diagrams/
-│   ├── system-architecture.png        # Subsystem-level architecture (Phase 3)
-│   ├── trust-boundaries-dfd.png       # Machine/trust boundary data-flow diagram
-│   └── class-diagram.png              # Core entity relationships (User, Course, Submission, AuditLog...)
-├── secure-code-review/
-│   ├── 01-otp-authentication.png
-│   ├── 02-session-token-login-controller.png
-│   ├── 03-otp-secret-encryption.png
-│   ├── 04-session-invalidation.png
-│   └── 04b-session-invalidation-sonarcloud.png
-└── docs/
-    └── CYS402_Canvas_LMS_Full_Report.pdf   # All four phases, complete
-```
 
 ## Source
 
